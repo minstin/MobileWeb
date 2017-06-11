@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css)undefined;
+
+.list-group ul {
+	margin : 0;
+	padding : 0;
+	list-style:none;
+	font-size : 20px;
+	font-weight: bold;
+	color : #000000;
+	background-color : #ffffff;
+}
+.list-group ul li a{
+	color : #000000;
+	font-size : 0.7em;
+	padding-top : 2px;
+}
+
+.tt a{
+	color : #000000;
+	font-size : 0.7em;
+	padding-top : 2px;
+}
+
+.tt{
+	padding-top : 3px;
+}
+
+.sub{  
+    display : none;  
+}  
+
+.modal-size {
+	width: 60%;
+	height: auto;
+}
+.modal-content {
+	background-color: #000000;
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+	border-bottom-left-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
+
+}
+.modal-body img {
+	width: 100%;
+	height : 500px;
+}
+.modal-header {
+	min-height: 200px;
+	background-image: url('../../../portraNet/images/modalHeader.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+	text-align: center;
+
+}
+
+.modal-title {
+	margin-top: 50px;
+	font-size: 3em;
+	color : #FFFFFF;
+	font-weight: bold;
+	word-break: keep-all;
+}
+.modal-subtitle {
+	font-size: 1em;
+	color : #FFFFFF;
+	word-break: keep-all;
+	text-align : right;
+}
+
+.modal-infotext {
+	padding: 3px;
+	margin-bottom: 8px;
+	background-color:#000000;
+}
+.modal-infotext > p{
+	word-break: keep-all;
+	font-size: 1em;
+	color : #FFFFFF;
+}
+
+.modal-footer {
+	padding-top: 10px; padding-bottom: 10px;
+	 
+}
+/* 모달 사이즈 재조정 */
+@media (max-width: 768px) {
+	.modal-size{
+		width: auto;
+		height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.modal-body img{
+		max-width: 100%;
+		height : 100px;
+	}
+}
+@media screen and (max-width:360px){
+	
+	.modal-infotext > p{
+	word-break: keep-all;
+	font-size: 0.1em;
+	color : #FFFFFF;
+	}
+	.modal-title {
+	margin-top: 40px;
+	font-size: 22px;
+
+	}
+	.modal-subtitle {
+	font-size: 0.2em;
+
+	}
+	.modal-header {
+	min-height: 100px;
+
+
+	}
+}

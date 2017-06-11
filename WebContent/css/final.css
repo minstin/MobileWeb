@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css); 
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css); 
+@import url(http://fonts.googleapis.com/css?family=Pacifico.css);
+
+
+body	{margin: 0;
+	font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
+	
+.header-top, .header-nav-inner, .footer-inner
+	{padding-left: 10px;
+	padding-right: 10px;}
+
+.top-name h1 a{color: red; 
+	text-decoration: none
+	}
+	
+.top-name h1	{margin: 0;
+	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+	font-weight: top;
+	text-shadow : 5px 5px 3px #848484 }
+
+.header-nav	{background-color: #000000}
+
+.menu ul	{margin: 0;
+	padding: 0;
+	list-style: none;}
+
+.menu li a	{ 
+	display: block;
+	padding: 15px;
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;}
+
+.menu li a:hover	{color: #000000;
+	background-color: #FFFFFF}
+
+.menu ul	{overflow:hidden ;}
+
+.menu li	{float: left; 
+	width: auto;}
+	
+@keyframes ani {
+	0% { transform:scale(0); }	
+	100% { transform:scale(1); }
+}	
+section { width:100%; position:relative; }
+article { float:left; height:260px; animation:ani 1s 1;}
+
+article:nth-child(1) { width:59%; height:300px;}
+article:nth-child(2) { width:41%; height:300px;background:#FFFFFF;}
+article:nth-child(3) { width:33%; }
+article:nth-child(5) { width:34%; background:#CCCCCC;}
+article:nth-child(4) { width:33%; background:#CEF6F5;}
+
+article>div { position:relative; width:100%; height:100%; overflow:hidden; cursor:pointer; }
+
+article:nth-child(1) { background-image:url(../img/나2.jpg);height:300px; width:59%;}
+article:nth-child(3) { background-image:url(../img/main2.jpg);width:33%;}
+
+article .bg1 strong { margin-top:10px;font-size:50px; text-shadow : 5px 5px 3px #848484; font-family: 'Pacifico', cursive; }
+article .bg2 strong { font-size:50px; text-shadow : 5px 5px 3px #848484;}
+article .bg4 strong { font-size:50px; text-shadow : 5px 5px 3px #848484;}
+article .bg5 strong { font-size:50px; text-shadow : 5px 5px 3px #848484; position:absolute; transform:rotate(-180deg);opacity:0;transition:all 0.9s;}
+article .bg3 strong { font-size:40px; transform:scale(10); opacity:0;transition:all 0.6s;}
+
+article .bg3 em { font-size:20px; font-weight: bold; position:absolute; bottom:10px; right:20px; transform:scale(10); opacity:0;transition:all 0.6s;}
+article .bg2 em { font-size:20px; font-weight: bold; position:absolute; bottom:10px; right:20px; transform:scale(10); opacity:0;transition:all 0.6s;}
+article .bg5 em { font-size:20px; font-weight: bold; position:absolute; bottom:30px; right:20px; transform:scale(10); opacity:0;transition:all 0.6s;}
+article .bg4 em { font-size:18px; font-weight: bold; position:absolute; bottom:30px; right:20px; }
+article:hover .bg2 em { opacity:1; transform:scale(1);}
+article:hover .bg2 strong { opacity:1; transform:scale(1);}
+
+article:hover .bg3 strong { opacity:1; transform:scale(1);}
+article:hover .bg3 em { opacity:1; transform:scale(1);}
+article:hover .bg3 {background-image:none;}
+article:nth-child(3):hover {background-image:none; color:#FFFFFF}
+
+article:hover .bg5 { background:#000000;	color:#fff;}
+article:hover .bg5 strong { opacity:1; transform:scale(1);color:#E0E03D}
+article:hover .bg5 em{ opacity:1; transform:scale(1);color:#E0E03D}
+
+
+article:hover .bg4 {background-image:url(../img/일상2.jpg); transform:rotate(360deg);transition:all 0.9s;}
+article:hover .bg4 strong { opacity:0; transform:scale(1);}
+article:hover .bg4 em{ opacity:0; transform:scale(1);}
+
+.copyright p	{margin: 0;
+	color: red;
+	font-size: 1.4em;
+	text-align: center;
+	font-family: 'pacifico', sans-serif;
+	font-weight: normal;
+}
+
+.footer	{background: #000000}
+
+/*---------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1280px) and (max-width:1599px) {
+header{position: relative; width:100%;}
+section{width:100%;}
+footer{width:100%}
+}
+
+@media screen and (min-width:980px) and (max-width:1279px){
+header{position: relative; width:100%;}
+footer{width:100%;}
+section{width:100%;}
+.header a{position:relative; font-size:27px;}
+.header-nav-inner ul li a{position:relative; font-size:18px;} 
+article:nth-child(1){width:60%; height:250px;}
+article:nth-child(2){width:40%; height:250px;}
+article:nth-child(3){width:33%;}
+article:nth-child(4){width:33%;}
+article:nth-child(5){width:34%;}
+
+article .bg strong{font-size:40px;}
+article .bg em{font-size:17px;}
+/*이 범위안에서 너비는 100%주고 메뉴도 그대로 폰트사이즈랑 섹션의 박스 크기만 줄였습니다.*/
+}
+
+@media screen and (min-width:680px) and (max-width:979px){
+header{position: relative; width:100%;}
+footer{width:100%;}
+section{width:100%;}
+.header a{position: relative; font-size:25px;}
+.header-nav-inner ul li a{position:relative; font-size:16px;}
+article:nth-child(1){width:100%; height:220px;}
+article:nth-child(2){width:50%; height:220px;}
+article:nth-child(3){width:50%; height:220px;}
+article:nth-child(4){width:50%; height:220px;}
+article:nth-child(5){width:50%; height:220px;}
+
+article .bg strong{font-size:35px;}
+article .bg em{font-size:17px;}
+/*범위안에서 마찬가지로 폰트와 박스사이즈 위주로 줄였습니다.
+ 처음과는 다르게 맨위에 한줄 나머지 두개씩 배치했습니다.*/
+}
+
+@media screen and (min-width:480px) and (max-width:679px){
+header{position: relative; width:100%;}
+footer{width:100%;}
+section{width:100%;}
+.header a{position: relative; font-size:22px;}
+.header-nav-inner ul li a{position:relative; font-size:14px;}
+article:nth-child(1){width:100%; height:180px;}
+article:nth-child(2){width:50%; height:180px;}
+article:nth-child(3){width:50%; height:180px;}
+article:nth-child(4){width:50%; height:180px;}
+article:nth-child(5){width:50%; height:180px;}
+
+article .bg strong{font-size:30px;}
+article .bg em{font-size:13px;}
+/*마찬가지로 폰트와 박스사이즈 위주로 줄였습니다.*/
+}
+
+@media screen and (min-width:350px) and (max-width:479px){
+header{ width:100%; text-align:center;}
+footer{width:100%;}
+section{display:none;}
+.header-nav{background:#FFFFFF;}
+.footer{background:#FFFFFF;}
+#ggg { width:400px;}	
+#ggg a {width:50px;  background:#000000; box-sizing:border-box;
+		margin:20px 10px 0 10px;
+		opacity:1; color:#FF0000;
+		-webkit-transition:3s ease;
+		}
+#ggg a:hover {background:#AAAAAA; transform:scale(1.1);
+			 height:200px;
+			 transition:all 1.5s;
+		}
+/*새로운 형태를 만들었기떄문에 맨위의 제목은 가운데로 해놓고
+ 섹션은 안보이게 none으로 지정해 놓았습니다. 배경색 바꾸고
+ 앞에 html에서 태그로 지정해놓은 #ggg로 너비를 설정해 놓고
+ 각 메뉴 5개의 크기를 50으로 해놓고 박스설정후 여백을 지정해놓고 올렸을때 변화와
+ 웹상에서의 효과를 위해 3초로 지정해 놨습니다.
+ 마우스를 올렸을때 색깔이 변하고 길이가 늘어나는데 이 시간을 1.5초 주면서
+ 느리게 설정했습니다.*/
+}
+@media screen and (max-width:349px){
+header{ width:100%; text-align:center;}
+footer{width:100%;}
+section{display:none;}
+.header-nav{background:#FFFFFF;}
+.footer{background:#FFFFFF;}
+#ggg { width:100%;}	
+#ggg a {width:37px;  background:#000000; box-sizing:border-box;
+		margin:20px 4px 0 4px;
+		opacity:1; color:#FF0000;
+		-webkit-transition:1s ease;
+		font-size:15px;
+		}
+#ggg a:hover {background:#AAAAAA; transform:scale(1.1);
+			 height:200px;
+			 transition:all 1.5s;
+		}
+	/*위에서 마무리 지으려고 했는데 가장작게 줄였을때 고정이안되고
+	 박스들이 지저분하게 정리가 되어서 계속 바꿔봤는데 안되서
+	 그냥 한가지 더 범위를 설정하고 크기를 바꿔서 5줄로 나란히 나오게 설정했습니다.
+	 따로 변화를 준건 없습니다.*/
+}

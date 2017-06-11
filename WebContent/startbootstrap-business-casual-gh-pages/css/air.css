@@ -1,0 +1,23 @@
+#airtext p {
+	font-size:50px;
+	text-align : center;
+} 
+ #airtext a{
+ 	text-align : center;
+ }
+ 
+ #airtext span{
+ 	font-size:30px;
+ }
+ 
+ @media screen and (max-width:361px){
+ #airair {
+	width:300px;
+	}
+#airtext p{
+	font-size:20px;
+	}
+#airtext span{
+	font-size:18px;
+}
+}

@@ -1,0 +1,65 @@
+ .link {
+    display: block;
+	float:right;
+    width: 50px;
+    margin:30px 50px 0 0;
+}
+
+
+.link .text , .icon{
+	float : right;
+	display: block;
+    margin-top: 6px;
+    font-size: 1.0em;
+    color: #fff;
+}
+
+#popup_mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 1100;
+}
+
+.lolo{
+    margin-top: 35px;
+    width: 90%;
+    height: 56px;
+    line-height: 56px;
+    margin-left: 15px;
+    font-size:1.5em;
+}
+
+.btn_close{
+	float:right;
+}
+
+.title_box > .title{
+	font-size:2em;
+	text-align:center;
+	padding-top:30px;
+}
+
+.title_box p{
+	font-size:1.0em;
+	text-align:center;
+}
+
+.form_area a{
+	font-size:1.5em;
+	color:#000000;
+	text-decoration:none;
+}
+
+.popup_window {
+    display: none;
+    position: fixed;
+    left: auto;
+    top: auto;
+    background: #fff;
+    z-index: 1200;
+}
