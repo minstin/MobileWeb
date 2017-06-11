@@ -2,7 +2,11 @@
 본 프로젝트는 Eclipse를 통해서 간단한 모바일 웹을 구현했다.
 
 # 개발환경
-> -OS : Windows 10 Pro 64bit 
+> -OS : Windows 10 Pro 64bit
+
+> -CPU : Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00 GHz
+
+> -RAM : 4.00GB
 
 > -IDE : Eclipse
 
